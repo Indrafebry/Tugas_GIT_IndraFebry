@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Freeman&family=Lora:ital,wght@0,400..700;1,400..700&family=Oswald:wght@200..700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+.container {
+    background-color: #1E1E2C;
+    margin: auto;
+}
+.header h1 {
+    color: #FFF;
+    font-family: "Lora", serif;
+    letter-spacing: 10px;
+    font-size: 45px;
+    text-align: center;
+    padding: 15px 0 15px 0;
+}
+.nav {
+    color: #FFDF00;
+}
+.nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+.nav ul li{
+    padding: 0 15px 0 15px;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: #FFDF00;
+    font-size: 17px;
+    font-family: "Lora", serif;
+    letter-spacing: 1px;
+}
+.nav ul li a:hover{
+    color: #FFF;
+}
+.nav ul li a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0px;
+    background: #ffe30f;
+    position:relative;
+    transition: width 0.3s;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -5px;
+}
+.nav ul li a:hover::after {
+    width: 100%;
+}
+.main {
+    background-color: #29293c;
+}
+.card {
+    padding: 12px;
+}
+.card span {
+    color: #FFB600;
+}
+.img {
+    width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	margin: 25px auto;
+	overflow: hidden;
+	border: 15px;
+    filter: grayscale(0%)
+}
+.img:hover {
+    filter: grayscale(100%);
+    transition: 1s;
+}
+.img img{
+	object-fit: cover;
+	width: 100%;
+}
+.card h3 {
+    text-align: center;
+    color: #FFF;
+    font-size: 30px;
+    letter-spacing: 3px;
+    font-family: "Freeman", sans-serif;
+    font-weight: 400;
+}
+.card p {
+    color: #FFDF00;
+    font-size: 18px;
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+.content {
+    background-color: #3c3c58;
+    width: 900px;
+    margin: auto;
+}
+.content p {
+    margin: 10px 0 0 0;
+    box-sizing: border-box;
+    padding: 20px;
+    color: #fff;
+    letter-spacing: 1px;
+    font-family: "Lora", serif;
+}
+.content span {
+    color: #FFB600;
+    font-weight: bold;
+}
+.content span a {
+    color: #FFB600;
+    text-decoration: none !important;
+}
+.content span a:hover {
+    color: #FFDF00;
+}
+.footer {
+    margin-top: 30px;
+    padding: 20px;
+    text-align: center;
+    background-color: #151520;
+    color: #DDD;
+    font-family: "Lora", serif;
+    letter-spacing: 2px;
+}

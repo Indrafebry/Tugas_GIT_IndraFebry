@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Freeman&family=Lora:ital,wght@0,400..700;1,400..700&family=Oswald:wght@200..700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+.container {
+    background-color: #1E1E2C;
+    margin: auto;
+}
+.header h1 {
+    color: #FFF;
+    font-family: "Lora", serif;
+    letter-spacing: 10px;
+    font-size: 45px;
+    text-align: center;
+    padding: 15px 0 15px 0;
+}
+.nav {
+    color: #FFDF00;
+}
+.nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+.nav ul li{
+    padding: 0 15px 0 15px;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: #FFDF00;
+    font-size: 17px;
+    font-family: "Lora", serif;
+    letter-spacing: 1px;
+}
+.nav ul li a:hover{
+    color: #FFF;
+}
+.nav ul li a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0px;
+    background: #ffe30f;
+    position:relative;
+    transition: width 0.3s;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -5px;
+}
+.nav ul li a:hover::after {
+    width: 100%;
+}
+.main {
+    color: #FFF;
+    background-color: #29293c;
+}
+.content {
+    display: flex;
+    flex-wrap: wrap;
+}
+.judul {
+    padding: 30px 0 40px 0;
+    text-align: center;
+    color: #FFF;
+    font-size: 35px;
+    letter-spacing: 3px;
+    font-family: "Freeman", sans-serif;
+    font-weight: 400
+}
+.left {
+    padding: 0 10px 0 70px;
+    flex: 1;
+}
+.menu {
+    font-family: "Lora", serif;
+    background-color: #3c3c58;
+    box-sizing: border-box;
+    padding: 15px;
+    margin: auto;
+}
+.menu input{
+	width: 550px;
+    height: 50px;
+    margin: 10px 0 10px 0;
+    padding: 15px;
+}
+.menu textarea {
+    width: 550px;
+    height: 180px;
+    margin-top: 10px;
+}
+input,
+textarea::backdrop {
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+input:placeholder-shown {
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 17px;
+    font-family: "Lora", serif;
+}
+textarea:placeholder-shown {
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 17px;
+    font-family: "Lora", serif;
+}
+button {
+    margin-top: 10px;
+    background-color: #052152;
+    color: #eee;
+    width: 150px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+button:hover {
+    background-color: #1E1E2C;
+}
+.menu h3{
+    color: #ffe30f;
+	background: #1E1E2C;
+	padding: 15px;
+	padding-left: 30px;
+	letter-spacing: 2px;
+	margin: 30px 0;
+	margin-bottom: 20px;
+	font-size: 20px;
+	border-radius: 50px 0 50px 0;
+}
+.right {
+    padding: 0 70px 0 10px;
+    flex: 1;
+}
+.menu i {
+    color: #ffe30f;
+}
+.menu a {
+    text-decoration: none;
+    color: #eee;
+    font-size: 20px;
+    display: block;
+    padding: 20px;
+}
+.menu span {
+    padding-left: 20px;
+}
+.menu a:hover {
+    color: #ffb30f;
+}
+.footer {
+    margin-top: 30px;
+    padding: 20px;
+    text-align: center;
+    background-color: #151520;
+    color: #DDD;
+    font-family: "Lora", serif;
+    letter-spacing: 2px;
+} 
